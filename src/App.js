@@ -9,8 +9,8 @@ import PrivateRoute from './components/PrivateRoute';
 
 // components
 import Home from './booking/Home';
-import Login from './auth/Login';
-import Register from './auth/Register';
+import Login from './booking/auth/Login';
+import Register from './booking/auth/Register';
 import Dashboard from './user/Dashboard';
 import DashboardSeller from './user/DashboardSeller';
 import NewHotel from './hotels/NewHotel';

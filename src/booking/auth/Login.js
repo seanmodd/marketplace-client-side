@@ -1,10 +1,10 @@
-import {useState} from 'react';
-import {toast} from 'react-toastify';
-import {login} from '../actions/auth';
-import LoginForm from '../components/LoginForm';
-import {useDispatch} from 'react-redux';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import { login } from '../../actions/auth';
+import LoginForm from '../../components/LoginForm';
 
-const Login = ({history}) => {
+const Login = ({ history }) => {
   const [email, setEmail] = useState('ryan@gmail.com');
   const [password, setPassword] = useState('rrrrrr');
 
@@ -12,13 +12,13 @@ const Login = ({history}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('SEND LOGIN DATA', {email, password});
+    console.log('SEND LOGIN DATA', { email, password });
     try {
-      const res = await login({email, password});
+      const res = await login({ email, password });
 
       if (res.data) {
         console.log(
-            'SAVE USER RES IN REDUX AND LOCAL STORAGE THEN REDIRECT ===> ',
+          'SAVE USER RES IN REDUX AND LOCAL STORAGE THEN REDIRECT ===> '
         );
         // console.log(res.data);
         // save user and token to local storage

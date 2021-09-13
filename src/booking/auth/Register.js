@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import RegisterForm from '../components/RegisterForm';
+import RegisterForm from '../../components/RegisterForm';
 import {toast} from 'react-toastify';
-import {register} from '../actions/auth';
+import {register} from '../../actions/auth';
 
 const Register = ({history}) => {
   const [name, setName] = useState('');
