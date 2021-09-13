@@ -1,10 +1,12 @@
 // import those pages in App.js
 // then based on the path show each components using react-router components
+import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import TopNav from './components/TopNav';
 import PrivateRoute from './components/PrivateRoute';
+
 // components
 import Home from './booking/Home';
 import Login from './auth/Login';
