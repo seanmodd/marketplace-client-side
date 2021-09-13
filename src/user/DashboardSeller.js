@@ -16,7 +16,7 @@ const DashboardSeller = () => {
 
   useEffect(() => {
     loadSellersHotels();
-  }, [loadSellersHotels]);
+  }, []);
 
   const loadSellersHotels = async () => {
     const {data} = await sellerHotels(auth.token);

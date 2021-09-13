@@ -14,7 +14,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     loadUserBookings();
-  }, [loadUserBookings]);
+  }, []);
 
   const loadUserBookings = async () => {
     const res = await userHotelBookings(token);

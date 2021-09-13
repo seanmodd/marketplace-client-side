@@ -16,7 +16,7 @@ const ViewHotel = ({match, history}) => {
 
   useEffect(() => {
     loadSellerHotel();
-  }, [loadSellerHotel]);
+  }, []);
 
   useEffect(() => {
     if (auth && auth.token) {
