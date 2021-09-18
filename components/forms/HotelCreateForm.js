@@ -1,4 +1,4 @@
-import AlgoliaPlaces from 'algolia-places-react';
+// import AlgoliaPlaces from 'algolia-places-react';
 import ChakraForm from './App';
 import {
   Avatar,
@@ -33,8 +33,8 @@ import { LanguageSelect } from './FormAccountSettings/LanguageSelect';
 const { Option } = Select;
 
 const config = {
-  appId: process.env.REACT_APP_ALGOLIA_APP_ID,
-  apiKey: process.env.REACT_APP_ALGOLIA_API_KEY,
+  // appId: process.env.REACT_APP_ALGOLIA_APP_ID,
+  // apiKey: process.env.REACT_APP_ALGOLIA_API_KEY,
   language: 'en',
   // countries: ["au"],
 };
@@ -104,7 +104,7 @@ const HotelCreateForm = ({
                 </FormControl>
               </VStack>
             </FieldGroup>
-            <FieldGroup color={mode('gray.900', 'gray.50')} title="Location">
+            {/* <FieldGroup color={mode('gray.900', 'gray.50')} title="Location">
               <AlgoliaPlaces
                 className="form-control m-2"
                 placeholder="Location"
@@ -113,7 +113,7 @@ const HotelCreateForm = ({
                 onChange={({ suggestion }) => setLocation(suggestion.value)}
                 style={{ height: '50px' }}
               />
-            </FieldGroup>
+            </FieldGroup> */}
             <FieldGroup
               color={mode('gray.900', 'gray.50')}
               title="Price per Day"

@@ -13,7 +13,7 @@ import React, { useState } from 'react';
 // import { DateObject } from 'react-multi-date-picker';
 // import DatePanel from 'react-multi-date-picker/plugins/date_panel';
 import { SearchOutlined } from '@ant-design/icons';
-import AlgoliaPlaces from 'algolia-places-react';
+// import AlgoliaPlaces from 'algolia-places-react';
 import moment from 'moment';
 
 // destructure values from ant components
@@ -21,8 +21,8 @@ import moment from 'moment';
 // const { Option } = Select;
 
 const config = {
-  appId: process.env.REACT_APP_ALGOLIA_APP_ID,
-  apiKey: process.env.REACT_APP_ALGOLIA_API_KEY,
+  // appId: process.env.REACT_APP_ALGOLIA_APP_ID,
+  // apiKey: process.env.REACT_APP_ALGOLIA_API_KEY,
   language: 'en',
   // accessibility: {
   //   pinButton: {
@@ -84,7 +84,7 @@ const Search = () => {
     >
       <HStack>
         <Box height="80px">
-          <AlgoliaPlaces
+          {/* <AlgoliaPlaces
             className="algolia-places"
             placeholder="Location"
             defaultValue={location}
@@ -100,7 +100,7 @@ const Search = () => {
               color: '#676767ec',
               borderRadius: '5px',
             }}
-          />
+          /> */}
         </Box>
         <Box h="80px">
           {/* <DateRangePicker

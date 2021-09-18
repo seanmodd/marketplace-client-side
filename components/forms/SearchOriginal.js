@@ -7,7 +7,7 @@ import { Select } from 'antd';
 //   DayPickerRangeController,
 // } from 'react-dates';
 import { SearchOutlined } from '@ant-design/icons';
-import AlgoliaPlaces from 'algolia-places-react';
+// import AlgoliaPlaces from 'algolia-places-react';
 import moment from 'moment';
 import { Heading } from '@chakra-ui/layout';
 
