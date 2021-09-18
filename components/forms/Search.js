@@ -9,9 +9,9 @@ import { Box, Flex, VStack, Heading, HStack, Select } from '@chakra-ui/react';
 import React, { useState } from 'react';
 // import { DatePicker, Select } from 'antd';
 // import RangePicker from 'react-range-picker';
-import DatePicker from 'react-multi-date-picker';
-import { DateObject } from 'react-multi-date-picker';
-import DatePanel from 'react-multi-date-picker/plugins/date_panel';
+// import DatePicker from 'react-multi-date-picker';
+// import { DateObject } from 'react-multi-date-picker';
+// import DatePanel from 'react-multi-date-picker/plugins/date_panel';
 import { SearchOutlined } from '@ant-design/icons';
 import AlgoliaPlaces from 'algolia-places-react';
 import moment from 'moment';
@@ -48,30 +48,30 @@ const Search = () => {
   const handleSubmit = () => {
     history.push(`/search-result?location=${location}&date=${date}&bed=${bed}`);
   };
-  const [values, setValues] = useState([
-    new DateObject().subtract(4, 'days'),
-    new DateObject().add(4, 'days'),
-  ]);
-  let today = new Date();
-  let dd = today.getDate();
-  const mydd = dd + 14;
-  console.log('mydd: ', mydd);
-  let mm = today.getMonth() + 1;
-  const yyyy = today.getFullYear();
-  if (dd < 10) {
-    dd = `0${dd}`;
-  }
+  // const [values, setValues] = useState([
+  //   new DateObject().subtract(4, 'days'),
+  //   new DateObject().add(4, 'days'),
+  // ]);
+  // let today = new Date();
+  // let dd = today.getDate();
+  // const mydd = dd + 14;
+  // console.log('mydd: ', mydd);
+  // let mm = today.getMonth() + 1;
+  // const yyyy = today.getFullYear();
+  // if (dd < 10) {
+  //   dd = `0${dd}`;
+  // }
 
-  if (mm < 10) {
-    mm = `0${mm}`;
-  }
+  // if (mm < 10) {
+  //   mm = `0${mm}`;
+  // }
 
-  today = `${mm}/${dd}/${yyyy}`;
-  const intwoweeks = `${mm}/${mydd}/${yyyy}`;
+  // today = `${mm}/${dd}/${yyyy}`;
+  // const intwoweeks = `${mm}/${mydd}/${yyyy}`;
 
-  console.log('TODAY: ', today);
+  // console.log('TODAY: ', today);
 
-  console.log('intwoweeks: ', intwoweeks);
+  // console.log('intwoweeks: ', intwoweeks);
 
   return (
     <HStack

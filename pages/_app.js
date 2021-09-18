@@ -8,10 +8,10 @@ import {
   HStack,
 } from '@chakra-ui/react';
 import '../styles/globals.css';
-import DateTimePicker from 'react-datetime-picker/dist/entry.nostyle';
-import 'react-calendar/dist/Calendar.css';
-import 'react-clock/dist/Clock.css';
-import 'react-datetime-picker/dist/DateTimePicker.css';
+
+
+
+
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { createStore } from 'redux';
