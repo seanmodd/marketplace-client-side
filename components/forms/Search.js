@@ -1,10 +1,10 @@
 // import 'react-dates/initialize';
-import { DateRangePickerInput } from 'react-datetime-range-super-picker';
+// import { DateRangePickerInput } from 'react-datetime-range-super-picker';
 
 import { Box, Flex, VStack, Heading, HStack, Select } from '@chakra-ui/react';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-daterangepicker/daterangepicker.css';
-import DateRangePicker from 'react-bootstrap-daterangepicker';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap-daterangepicker/daterangepicker.css';
+// import DateRangePicker from 'react-bootstrap-daterangepicker';
 
 import React, { useState } from 'react';
 // import { DatePicker, Select } from 'antd';
