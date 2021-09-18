@@ -20,14 +20,14 @@ import {
   Select,
 } from '@chakra-ui/react';
 import moment from 'moment';
-import 'bootstrap-daterangepicker/daterangepicker.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import DateRangePicker from 'react-bootstrap-daterangepicker';
+// import 'bootstrap-daterangepicker/daterangepicker.css';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import DateRangePicker from 'react-bootstrap-daterangepicker';
 import { HiCloudUpload } from 'react-icons/hi';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { FieldGroup } from './FormAccountSettings/FieldGroup';
 
-const { Option } = Select;
+// const { Option } = Select;
 
 const config = {
   appId: process.env.REACT_APP_ALGOLIA_APP_ID,
