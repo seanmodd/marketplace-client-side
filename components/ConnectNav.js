@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Card, Avatar, Badge } from 'antd';
 import moment from 'moment';
 import { SettingOutlined } from '@ant-design/icons';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import {
   getAccountBalance,
   currencyFormatter,
@@ -41,7 +41,8 @@ const ConnectNav = () => {
     } catch (err) {
       console.log(err);
       setLoading(false);
-      toast('Unable to access settings. Try again');
+      // toast('Unable to access settings. Try again');
+      console.log("REACT-TOASTIFY MESSAGE HERE")
     }
   };
 

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import { Text, VStack } from '@chakra-ui/layout';
 
 // import { DatePicker, Select } from "antd";
@@ -51,13 +51,15 @@ const NewHotel = () => {
     try {
       const res = await createHotel(token, hotelData);
       console.log('HOTEL CREATE RES', res);
-      toast.success('New hotel is posted');
+      // toast.success('New hotel is posted');
+      console.log("REACT-TOASTIFY MESSAGE HERE")
       setTimeout(() => {
         typeof window !== 'undefined' && window.location.reload();
       }, 1000);
     } catch (err) {
       console.log(err);
-      toast.error(err.response.data);
+      // toast.error(err.response.data);
+      console.log("REACT-TOASTIFY MESSAGE HERE")
     }
   };
 

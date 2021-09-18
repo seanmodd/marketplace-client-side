@@ -8,23 +8,24 @@ import {
   Text,
   useColorModeValue as mode,
 } from '@chakra-ui/react';
+
 import Link from 'next/link';
+
 import * as React from 'react';
 
 import { HiOutlineExternalLink } from 'react-icons/hi';
-import { useState } from 'react';
 
-import { toast } from 'react-toastify';
+import { useState } from 'react';
 
 import { useDispatch } from 'react-redux';
 
 import { useRouter } from 'next/router';
 
-import { login } from '../../redux/actions/auth';
 import LoginForm from '../../components/LoginForm';
-import { Logo } from '../../components/LoginWithFlushedInputs/Logo';
 import { SigninForm } from '../../components/SigninForm';
+import { Logo } from '../../components/LoginWithFlushedInputs/Logo';
 import { UnderlineLink } from '../../components/LoginWithFlushedInputs/UnderlineLink';
+import { login } from '../../redux/actions/auth';
 
 const App = () => {
   const router = useRouter();
@@ -56,7 +57,9 @@ const App = () => {
       }
     } catch (err) {
       console.log(err);
-      if (err.response.status === 400) toast.error(err.response.data);
+      if (err.response.status === 400) 
+      // toast.error(err.response.data);
+      console.log("REACT-TOASTIFY MESSAGE HERE")
     }
   };
   return (

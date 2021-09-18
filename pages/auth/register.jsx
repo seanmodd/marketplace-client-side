@@ -1,7 +1,3 @@
-import { useState } from 'react';
-import { toast } from 'react-toastify';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
 import {
   Box,
   Button,
@@ -12,15 +8,23 @@ import {
   Text,
   useColorModeValue as mode,
 } from '@chakra-ui/react';
+
+import { useState } from 'react';
+
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+
 import * as React from 'react';
+
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
-import { register } from '../../redux/actions/auth';
+
 import RegisterForm from '../../components/RegisterForm';
 import * as Logos from '../../components/SignupWithFormProviders/Brands';
 import { DividerWithText } from '../../components/SignupWithFormProviders/DividerWithText';
 import { Logo } from '../../components/SignupWithFormProviders/Logo';
 import { SigupForm } from '../../components/SignupWithFormProviders/SigupForm';
 import { Testimonial } from '../../components/SignupWithFormProviders/Testimonial';
+import { register } from '../../redux/actions/auth';
 
 const App = () => {
   const router = useRouter();
@@ -37,11 +41,14 @@ const App = () => {
         password,
       });
       console.log('REGISTER USER ===> ', res);
-      toast.success('Register success. Please login.');
+      // toast.success('Register success. Please login.');
+      console.log("REACT-TOASTIFY MESSAGE HERE")
       router.push('/auth/login');
     } catch (err) {
       console.log(err);
-      if (err.response.status === 400) toast.error(err.response.data);
+      if (err.response.status === 400) 
+      // toast.error(err.response.data);
+      console.log("REACT-TOASTIFY MESSAGE HERE")
     }
   };
   return (

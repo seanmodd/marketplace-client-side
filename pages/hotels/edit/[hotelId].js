@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 // import { Select } from "antd";
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
@@ -65,10 +65,12 @@ const EditHotel = () => {
     try {
       const res = await updateHotel(token, hotelData, hotelId);
       console.log('HOTEL UPDATE RES', res);
-      toast.success(`${res.data.title} is updated`);
+      // toast.success(`${res.data.title} is updated`);
+      console.log("REACT-TOASTIFY MESSAGE HERE")
     } catch (err) {
       console.log(err);
-      toast.error(err.response.data.err);
+      // toast.error(err.response.data.err);
+      console.log("REACT-TOASTIFY MESSAGE HERE")
     }
   };
 

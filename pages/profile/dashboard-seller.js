@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { HomeOutlined } from '@ant-design/icons';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import DashboardNav from '../../components/DashboardNav';
 import ConnectNav from '../../components/ConnectNav';
 // import {Link} from 'react-router-dom';
@@ -40,7 +40,8 @@ const DashboardSeller = () => {
       router.push(res.data);
     } catch (err) {
       console.log(err);
-      toast.error('Stripe connect failed, Try again.');
+      // toast.error('Stripe connect failed, Try again.');
+      console.log("REACT-TOASTIFY MESSAGE HERE")
       setLoading(false);
     }
   };
@@ -49,7 +50,8 @@ const DashboardSeller = () => {
     if (typeof window !== 'undefined' && !window?.confirm('Are you sure?'))
       return;
     deleteHotel(auth.token, hotelId).then((res) => {
-      toast.success('Hotel Deleted');
+      // toast.success('Hotel Deleted');
+      console.log("REACT-TOASTIFY MESSAGE HERE")
       loadSellersHotels();
     });
   };
